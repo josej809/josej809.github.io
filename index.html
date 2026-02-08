@@ -43,19 +43,13 @@ footer {
   padding: 10px; /*Adds a margin around the footer*/
 }
 
-    .container {
-    /* Uses Flexbox to center the inner text-block */
-    display: flex;
-    justify-content: center;
-    width: 100%; /* Ensures the container spans the full width */
-    border: 1px solid #ccc; /* Optional: helps visualize the container */
-}
 
-.text-block {
-    /* The text inside remains naturally left-aligned */
-    /* Add padding/margins as needed */
+    .centered-text-block {
+    /* Centers the entire block horizontally */
+    margin: 0 auto;
+    max-width: 500px; /* Essential: auto margins only work with a defined width */
+    border: 1px solid #ccc; /* Optional: helps visualize the block */
     padding: 10px;
-    background-color: #f0f0f0; /* Optional: helps visualize the text block */
 }
 
 </style>
@@ -66,7 +60,7 @@ footer {
 
 
 
-<body class="container;">
+<body class="centered-text-block;">
  <h3><img src="Me.jpeg" width="200" height="250" style="border: 3px solid black;" > <i> &nbsp;&nbsp;&nbsp;&nbsp; Julien Jose </i></h3>
 
  <h3>Objective</h3>
