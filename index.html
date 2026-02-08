@@ -43,8 +43,20 @@ footer {
   padding: 10px; /*Adds a margin around the footer*/
 }
 
+    .container {
+    /* Uses Flexbox to center the inner text-block */
+    display: flex;
+    justify-content: center;
+    width: 100%; /* Ensures the container spans the full width */
+    border: 1px solid #ccc; /* Optional: helps visualize the container */
+}
 
-
+.text-block {
+    /* The text inside remains naturally left-aligned */
+    /* Add padding/margins as needed */
+    padding: 10px;
+    background-color: #f0f0f0; /* Optional: helps visualize the text block */
+}
 
 </style>
 
@@ -54,8 +66,8 @@ footer {
 
 
 
-<body style="margin-left: 400px;">
-
+<body class="container;">
+<div class="text-block;">
  <h3><img src="Me.jpeg" width="200" height="250" style="border: 3px solid black;" > <i> &nbsp;&nbsp;&nbsp;&nbsp; Julien Jose </i></h3>
 
  <h3>Objective</h3>
@@ -156,14 +168,14 @@ Hobbies, Interests, Professional Associations
 
 </h2>
 
-<h1>Project Highlight</h1>
+<h1>Project Highlights</h1>
 <h2>Banking Program C++: Using Classes, Dynamic Memory Allocation, functions, and inheritance</h2>
 
-
-
-
-</body>
-    <footer style="margin-left: 0px;">    
+<footer style="margin-left: 0px;">    
     &copy; 2026 - Julien Jose
 </footer>
+
+</div>
+</body>
+    
 </html>
